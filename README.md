@@ -52,31 +52,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pysmspp` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install pysmspp
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install pysmspp
 ```
 
-It is possible to list all of the versions of `pysmspp` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add pysmspp
+# for installing globally
+pixi global install pysmspp
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `pysmspp` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search pysmspp --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search pysmspp --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search pysmspp --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -88,6 +130,8 @@ mamba repoquery whoneeds pysmspp --channel conda-forge
 # List dependencies of `pysmspp`:
 mamba repoquery depends pysmspp --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
