@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -23,10 +23,8 @@ requirements:
   run:
     - python >={{ python_min }}
     - pandas >=0.24
-    - pathlib
     - netcdf4
     - psutil
-    - matplotlib >=3.0
 
 test:
   imports:
